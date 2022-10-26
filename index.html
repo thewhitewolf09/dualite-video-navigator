@@ -1,31 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/index.css"/>
+    <link rel="stylesheet" href="./index.css" type="text/css" />
     <title>Dualite Video navigator</title>
 </head>
+
 <body>
     <div class="video-container">
-        <span  id="video-title"></span>
+        <span id="video-title"></span>
         <div class="top-right-container">
             <button><a href="https://google.com" target="_blank">Go to Google</a></button>
-            <div  onclick="changeVideo(1)">
-                <img src="/src/vid2_img.png"/>
+            <div onclick="changeVideo(1)">
+                <img src="/src/vid2_img.png" />
                 <span>Earth's Rotation Visualized in a Timelapse of the Milky Way Galaxy - 4K</span>
             </div>
             <div onclick="changeVideo(2)">
-                <img src="/src/vid3_img.png"/>
+                <img src="/src/vid3_img.png" />
                 <span>Viewing the Earth’s Rotation from Space</span>
             </div>
             <button id="skipEl">Skip>></button>
         </div>
-        <video id="myVideo" controls >
-            <source id="source" src="/src/vid1.mp4" type="video/mp4"/>
+        <video id="myVideo" controls>
+            <source id="source" src="/src/vid1.mp4" type="video/mp4" />
         </video>
     </div>
-    <script type="text/javascript" src="/index.js"></script>
+    <script type="text/javascript" src="./index.js"></script>
 </body>
+
 </html>

@@ -28,6 +28,7 @@ vidEl.onloadedmetadata = function myVideo() {
         if ((statusEl != true)&&(Math.floor(vidEl.currentTime) >= Math.floor(vidEl.duration / 2))) {
             vidEl.pause();
             topRightContainerEl.style.display = 'block';
+            skipEl.style.display = 'block';
             skipEl.addEventListener("click", () =>{
                 topRightContainerEl.style.display = 'none';
                 vidEl.play();
@@ -35,7 +36,7 @@ vidEl.onloadedmetadata = function myVideo() {
             })
         }
 
-        if ((statusEl == true)&&(Math.floor(vidEl.currentTime) >= Math.floor(vidEl.duration))) {
+        if (Math.floor(vidEl.currentTime) >= Math.floor(vidEl.duration)) {
             topRightContainerEl.style.display = 'block';
             skipEl.style.display = 'none';
         }
